@@ -25,9 +25,4 @@ telemetry.cwe.cloud {
   }
 
   reverse_proxy kafka:8080
-
-  # Log access
-  log {
-    output file /home/thingsboard/thingsboard.cwe.cloud/tb-logs/caddy.log
-  }
 }
