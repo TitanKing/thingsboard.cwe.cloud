@@ -24,5 +24,5 @@ telemetry.cwe.cloud {
     # Permissions-Policy "camera=(), geolocation=(), microphone=()"
   #}
 
-  reverse_proxy kafka:9092
+  reverse_proxy mytb:9090
 }
