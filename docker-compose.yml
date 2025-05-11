@@ -1,4 +1,3 @@
-version: '3.2'
 services:
   caddy:
     container_name: thingsboard-caddy
@@ -9,8 +8,8 @@ services:
       - "443:443"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
-      - tb-data:/data
-      - tb-logs:/config
+      - caddy_data:/data
+      - caddy_config:/config
     depends_on:
       - kafka
   kafka:
