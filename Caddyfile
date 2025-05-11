@@ -11,17 +11,17 @@ telemetry.cwe.cloud {
 
   header {
     # Prevent clickjacking
-    X-Frame-Options "SAMEORIGIN"
+    # X-Frame-Options "SAMEORIGIN"
     # XSS protection
-    X-Content-Type-Options "nosniff"
+    # X-Content-Type-Options "nosniff"
     # Strict Transport Security
-    Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    # Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
     # Referrer policy
-    Referrer-Policy "strict-origin-when-cross-origin"
+    # Referrer-Policy "strict-origin-when-cross-origin"
     # Content Security Policy - using a relatively permissive policy for compatibility
-    Content-Security-Policy "default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; connect-src 'self' https: wss:;"
+    # Content-Security-Policy "default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; connect-src 'self' https: wss:;"
     # Feature policy
-    Permissions-Policy "camera=(), geolocation=(), microphone=()"
+    # Permissions-Policy "camera=(), geolocation=(), microphone=()"
   }
 
   reverse_proxy kafka:8080
