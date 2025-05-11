@@ -8,7 +8,6 @@ services:
       - "443:443"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
-      - caddy_config:/config
     depends_on:
       - kafka
   kafka:
