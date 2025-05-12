@@ -1,8 +1,7 @@
-TB_QUEUE_TYPE=kafka
+TB_QUEUE_TYPE=rabbitmq
 
 # redis or redis-cluster or redis-sentinel
 CACHE=redis
-
 DOCKER_REPO=thingsboard
 
 JS_EXECUTOR_DOCKER_NAME=tb-js-executor
