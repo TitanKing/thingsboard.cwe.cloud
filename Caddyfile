@@ -1,4 +1,4 @@
-telemetry.crossworksengineering.com {
+telemetry.crosstasks.work {
   # Use automatically-managed certificates
   tls {
     issuer acme {
