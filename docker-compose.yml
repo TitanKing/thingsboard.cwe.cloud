@@ -11,14 +11,13 @@ services:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - ./caddy_data:/data 
 
-  js-executor:
-    image: thingsboard/tb-js-executor:4.0.1PE
+  tb-js-executor:
     restart: always
-    environment:
-      TB_QUEUE_TYPE: kafka
-      TB_KAFKA_SERVERS: kafka:9094
-    depends_on:
-      - kafka
+    image: "${DOCKER_REPO}/${JS_EXECUTOR_DOCKER_NAME}:${TB_VERSION}"
+    deploy:
+      replicas: 10
+    env_file:
+      - tb-js-executor.env
 
   kafka:
     restart: always
