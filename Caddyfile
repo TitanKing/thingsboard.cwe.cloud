@@ -1,4 +1,4 @@
-telemetry.cwe.cloud {
+telemetry.crossworksengineering.com {
   # Use automatically-managed certificates
   tls {
     issuer acme {
