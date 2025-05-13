@@ -1,7 +1,3 @@
-{
-  certificates_per_domain 1
-}
-
 telemetry.cwe.cloud {
   # Use automatically-managed certificates
   tls {
