@@ -1,10 +1,13 @@
+{
+  certificates_per_domain 1
+}
+
 telemetry.cwe.cloud {
   # Use automatically-managed certificates
   tls {
     issuer acme {
       email jason@schoeman.me
     }
-    certificatesPerDomain: 1
   }
 
   # Enable compression
